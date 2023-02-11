@@ -10,6 +10,7 @@ import Category3 from "./Component/Category3";
 import ProductPage from "./Component/ProductPage";
 import Viewitem from "./Component/Viewitem";
 import EditP from "./Component/EditP";
+import UpdateProduct from "./Component/UpdateProduct";
 function HomePage8() {
   return (
     <div>
@@ -41,6 +42,13 @@ function EditPage() {
     </div>
   );
 }
+function UpdatePage() {
+  return (
+    <div>
+      <UpdateProduct />
+    </div>
+  );
+}
 
 function AddNewProductPage() {
   return (
@@ -62,7 +70,7 @@ function App() {
         <Route path="/product2" element={<Category2 />} />
         <Route path="/product3" element={<Category3 />} />
         <Route path="/viewitem" element={<ViewitemPage />} />
-        <Route path="/editPage" element={<EditPage />} />
+        <Route path="/updateitem" element={<UpdatePage />} />
       </Routes>
       <Footer />
       {/* <ProductPage/> */}
