@@ -25,7 +25,7 @@ const HomePage = () => (
         />
       </Col>
       <Col xs={12}>
-        <h1>Welcome mahmod store...</h1>
+        <h1>Welcome kamel store...</h1>
       </Col>
       <Col xs={12}>
         <Button href="/products" variant="primary">
