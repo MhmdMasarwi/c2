@@ -8,7 +8,7 @@ function Category1() {
     data.then((obj) => {
       setObjData([...obj]);
     });
-  });
+  }, []);
   return (
     <div>
       {objData.map((item, index) => {
