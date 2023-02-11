@@ -46,7 +46,7 @@ const CategoryButtons = () => {
           </Button>
         </Link>
 
-        <Link to="/product2">
+        <Link to="/product3">
           <Button
             onClick={() => handleCategorySelect("Category 3")}
             variant="secondary"
