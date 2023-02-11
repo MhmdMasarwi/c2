@@ -8,7 +8,7 @@ function CardPage({ data }) {
   let navigate = useNavigate();
 
   useEffect(() => {
-    console.log(data);
+    console.log(data.id);
   }, []);
   return (
     <Card style={{ width: "18rem" }} className="card1">
@@ -28,6 +28,17 @@ function CardPage({ data }) {
           }}
         >
           Delete
+        </Card.Link>
+        <Card.Link
+          onClick={() => {
+            navigate("/updateitem", {
+              state: {
+                id: data.id,
+              },
+            });
+          }}
+        >
+          update
         </Card.Link>
         <Card.Link
           onClick={() => {
