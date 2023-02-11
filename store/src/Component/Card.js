@@ -9,7 +9,7 @@ function CardPage({ data }) {
 
   useEffect(() => {
     console.log(data);
-  });
+  }, []);
   return (
     <Card style={{ width: "18rem" }} className="card1">
       <Card.Img variant="top" src={data.data().imgUrl} />

@@ -8,15 +8,15 @@ function Category3() {
     data.then((obj) => {
       setObjData([...obj]);
     });
-  });
+  }, []);
   return (
     <div>
       {objData.map((item, index) => {
-         return (
-            <div key={index}>
-              <Card data={item} />
-            </div>
-          );
+        return (
+          <div key={index}>
+            <Card data={item} />
+          </div>
+        );
       })}
     </div>
   );
