@@ -10,7 +10,7 @@ const Footer = () => {
           <Col>
             <p className="text1">
               Built with React & Bootstrap <br></br>
-              Mahmod Mzareb 2/2023
+              kmel aodi 2/2023
             </p>
             
           </Col>
