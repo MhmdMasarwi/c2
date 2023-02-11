@@ -2,7 +2,7 @@ import "./App.css";
 // import ProductPage from "./Component/ProductPage";
 import HomePage from "./Component/HomePage";
 import Footer from "./Component/Footer";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import AddProdect from "./Component/AddProdect";
 import Category1 from "./Component/Category1";
 import Category2 from "./Component/Category2";
@@ -15,6 +15,7 @@ function HomePage8() {
     <div>
       <HomePage />
       <ProductPage />
+      <AddNewProductPage />
     </div>
   );
 }
@@ -37,6 +38,16 @@ function EditPage() {
   return (
     <div>
       <EditP />
+    </div>
+  );
+}
+
+function AddNewProductPage() {
+  return (
+    <div>
+      <Link to="/addProduct">
+        <button>add new product</button>
+      </Link>
     </div>
   );
 }
