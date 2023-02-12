@@ -44,6 +44,7 @@ function CardPage({ data }) {
           onClick={() => {
             navigate("/viewitem", {
               state: {
+                data: data.data(),
                 id: data.id,
               },
             });
