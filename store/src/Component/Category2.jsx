@@ -10,7 +10,7 @@ function Category2() {
     });
   }, []);
   return (
-    <div>
+<div className="card-container">
       {objData.map((item, index) => {
         return (
           <div key={index}>
