@@ -14,26 +14,20 @@ const styles = {
 };
 
 const HomePage = () => (
-  <Container>
-    <Row className="align-items-center">
-      <Col xs={12} style={styles.imageContainer}>
-        <Image
-          style={styles.image}
-          src="dirt-bike-ge26d3431b_1920.jpg"
-          alt="Store"
-          fluid
-        />
-      </Col>
-      <Col xs={12}>
-        <h1>Welcome kamel store...</h1>
-      </Col>
-      <Col xs={12}>
-        <Button href="/products" variant="primary">
-          View Products
-        </Button>
-      </Col>
-    </Row>
-  </Container>
+  <div className="homepage__header">
+    <Container>
+      <Row className="align-items-center">
+        <Col xs={12}>
+          <h1>Welcome kamel store...</h1>
+        </Col>
+        <Col xs={12}>
+          <Button href="/products" variant="primary">
+            seeAllProducts
+          </Button>
+        </Col>
+      </Row>
+    </Container>
+  </div>
 );
 
 export default HomePage;

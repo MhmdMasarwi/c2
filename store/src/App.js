@@ -11,9 +11,10 @@ import ProductPage from "./Component/ProductPage";
 import Viewitem from "./Component/Viewitem";
 import EditP from "./Component/EditP";
 import UpdateProduct from "./Component/UpdateProduct";
+
 function HomePage8() {
   return (
-    <div>
+    <div className="home">
       <HomePage />
       <ProductPage />
       <AddNewProductPage />
@@ -52,10 +53,17 @@ function UpdatePage() {
 
 function AddNewProductPage() {
   return (
-    <div>
+    <div className="add_new_product_page">
       <Link to="/addProduct">
         <button>add new product</button>
       </Link>
+    </div>
+  );
+}
+function seeAllProducts() {
+  return (
+    <div>
+      <seeAllProducts />
     </div>
   );
 }
