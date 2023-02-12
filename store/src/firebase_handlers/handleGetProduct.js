@@ -22,3 +22,13 @@ export const getAllProductByCategory = async (e, data) => {
     console.error("Error adding document: ", e);
   }
 };
+
+export const getAllProduct = async () => {
+  try {
+    return getDocs(collection(db, "products")).then((querySnapshot) => {
+      return querySnapshot.docs;
+    });
+  } catch (e) {
+    console.error("Error adding document: ", e);
+  }
+};
