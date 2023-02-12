@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { getAllProductByCategory } from "../firebase_handlers/handleGetProduct";
 import Card from "./Card";
+import "./Category3.css";
 function Category3() {
   const [objData, setObjData] = useState([]);
   useEffect(() => {
@@ -10,10 +11,10 @@ function Category3() {
     });
   }, []);
   return (
-    <div>
+    <div className="card-container">
       {objData.map((item, index) => {
         return (
-          <div key={index}>
+          <div className="product-card" key={index}>
             <Card data={item} />
           </div>
         );

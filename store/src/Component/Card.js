@@ -11,7 +11,7 @@ function CardPage({ data }) {
     console.log(data.id);
   }, []);
   return (
-    <Card style={{ width: "18rem" }} className="card1">
+    <Card style={{ width: "18rem", height: "500px" }} className="card1">
       <Card.Img variant="top" src={data.data().imgUrl} />
       <Card.Body>
         <Card.Title>{data.data().name}</Card.Title>
