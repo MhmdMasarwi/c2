@@ -11,6 +11,7 @@ import ProductPage from "./Component/ProductPage";
 import Viewitem from "./Component/Viewitem";
 import EditP from "./Component/EditP";
 import UpdateProduct from "./Component/UpdateProduct";
+import SeeAllProduct from "./Component/SeeAllProduct";
 
 function HomePage8() {
   return (
@@ -77,6 +78,7 @@ function App() {
         <Route path="/product1" element={<Category1 />} />
         <Route path="/product2" element={<Category2 />} />
         <Route path="/product3" element={<Category3 />} />
+        <Route path="/AllProduct" element={<SeeAllProduct />} />
         <Route path="/viewitem" element={<ViewitemPage />} />
         <Route path="/updateitem" element={<UpdatePage />} />
       </Routes>
